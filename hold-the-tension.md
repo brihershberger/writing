@@ -6,7 +6,7 @@ tags: writing
 ---
 
 ## Hold the Tension
-
+ 
 Hold the tension  
 Between fire and flow  
 Between edge and tide  

@@ -1,7 +1,7 @@
 ---
 title: Living a Meaningful Life Through Design
 layout: base.njk
-permalink: "/writing/{{ title | slug }}/index.html"
+permalink: "/writing/{{ page.fileSlug }}/index.html"
 tags: writing
 ---
 
