@@ -1,8 +1,11 @@
-module.exports = function (eleventyConfig) {
+module.exports = function(eleventyConfig) {
+  eleventyConfig.addCollection("writing", function(collectionApi) {
+    return collectionApi.getFilteredByTag("writing");
+  });
+
   return {
     dir: {
       input: ".",
-      includes: "_includes",
       output: "_site"
     }
   };
