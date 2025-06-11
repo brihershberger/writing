@@ -4,13 +4,9 @@ on:
   push:
     branches: [main]
 
-permissions:
-  contents: write
-
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -31,4 +27,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
-          publish_branch: gh-pages
+          publish_branch: gh-pages  # 👈 THIS is the fix
