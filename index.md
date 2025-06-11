@@ -8,4 +8,4 @@ layout: base.njk
 {% for post in collections.writing %}
   <p><a href="{{ post.url }}">{{ post.data.title }}</a></p>
 {% endfor %} 
-<!-- Trigger rebuild -->
+<!-- trigger: ensure rebuild with new article -->
